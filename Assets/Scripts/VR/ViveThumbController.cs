@@ -2,7 +2,7 @@
 
 namespace Jake.VR
 { 
-	public class ThumbController : MonoBehaviour
+	public class ViveThumbController : MonoBehaviour
 	{
 		public Transform	leftThumb, 
 							rightThumb;

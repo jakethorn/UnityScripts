@@ -110,7 +110,7 @@ namespace Jake.Timeline
 			if (NewPauseId != 0 && CurrentPauseId == 0)
 			{
 				director.Pause();
-				StudyLogger.LogLine("timeline paused at: " + Time.time.ToString());
+				Studies.Four.StudyLogger.LogLine("timeline paused at: " + Time.time.ToString());
 			}
 
 			CurrentPauseId = NewPauseId;
@@ -121,7 +121,7 @@ namespace Jake.Timeline
 			{
 				NextTimelineId = -1;
 				director.Play(nextTimeline);
-				StudyLogger.LogLine("timeline played at: " + Time.time.ToString());
+				Studies.Four.StudyLogger.LogLine("timeline played at: " + Time.time.ToString());
 			}
 		}
 
@@ -130,7 +130,7 @@ namespace Jake.Timeline
 			if (CurrentPauseId == pauseId)
 			{
 				director.Resume();
-				StudyLogger.LogLine("timeline resumed at: " + Time.time.ToString());
+				Studies.Four.StudyLogger.LogLine("timeline resumed at: " + Time.time.ToString());
 			}
 		}
 

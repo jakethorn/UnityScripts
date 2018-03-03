@@ -42,10 +42,10 @@ namespace Jake.Studies.Four
 			FindObjectOfType<StudyLogger>().id = conditionFile.participantId;
 
 			var participantId = conditionFile.participantId.ToString();
-			var dilemmaType = conditionFile.dilemmaType;
-			var influenceType = conditionFile.influenceType;
-			var swapElevators = conditionFile.swapElevators;
-			var swapHands = conditionFile.swapHands;
+			var dilemmaType = default(DilemmaType);// conditionFile.dilemmaType;
+			var influenceType = default(InfluenceType);// conditionFile.influenceType;
+			var swapElevators = default(bool);// conditionFile.swapElevators;
+			var swapHands = default(bool);// conditionFile.swapHands;
 
 			// do from participantId
 			if (participantId[0] == '1' || participantId[0] == '2' || participantId[0] == '3')
